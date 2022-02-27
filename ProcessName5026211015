@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ProcessName {
+
+// proses perubahan nama
+
+    public static void main(String[] args) {
+        Scanner firstname = new Scanner(System.in);
+        System.out.println("Type Your Name here ==>");
+
+        String lastname = firstname.nextLine();
+        int x  = lastname.indexOf (' ');
+
+        String Format;
+        Format = lastname.substring(x + 1) + "," + lastname.charAt(0)+ ".";
+
+        System.out.println("Your name is ==>" + Format);
+
+    }
+
+}
